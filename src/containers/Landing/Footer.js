@@ -35,7 +35,7 @@ function Index() {
               <IconButton
                 component="a"
                 target="_blank"
-                href="https://www.instagram.com/karsooghmehregan/">
+                href="https://www.instagram.com/rastaiha/">
                 <InstagramIcon />
               </IconButton>
             </Grid>

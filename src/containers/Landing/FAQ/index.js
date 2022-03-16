@@ -38,7 +38,7 @@ function Index() {
           {'سوالات متداول'}
         </Typography>
         <Grid container justify="space-between" spacing={2}>
-          <Grid item xs={12} md={6}>
+          <Grid item xs={12} md={60}>
             <According />
           </Grid>
           <Grid item xs={12} md={5} container justifyContent='center'>

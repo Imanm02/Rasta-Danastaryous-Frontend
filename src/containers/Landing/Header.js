@@ -18,7 +18,7 @@ const useStyles = makeStyles((theme) => ({
     width: '100%',
     position: 'fixed',
     height: '100vh',
-    backgroundImage: `url(${process.env.PUBLIC_URL + '/abcd.png'})`,
+    backgroundImage: `url(${process.env.PUBLIC_URL + '/background.jpg'})`,
     backgroundPosition: 'center center',
     backgroundRepeat: 'no-repeat',
     backgroundSize: 'cover',
