@@ -27,7 +27,7 @@ function Index() {
       <WhatTheFuzz />
       <Steps />
       <FAQ />
-      <Galley />
+      {/*<Galley />*/}
       <Comments />
       {/* <Staff /> */}
       <Footer />

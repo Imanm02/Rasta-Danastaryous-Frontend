@@ -18,19 +18,19 @@ const useStyles = makeStyles((theme) => ({
     width: '100%',
     position: 'fixed',
     height: '100vh',
-    backgroundImage: `url(${process.env.PUBLIC_URL + '/background.png'})`,
+    backgroundImage: `url(${process.env.PUBLIC_URL + '/abcd.png'})`,
     backgroundPosition: 'center center',
     backgroundRepeat: 'no-repeat',
     backgroundSize: 'cover',
     filter: 'blur(5px)',
-    webkitFilter: 'blur(5px)',
-    opacity: 0.9,
+    webkitFilter: 'blur(0px)',
+    opacity: 1,
     transform: 'scale(1.2)',
     zIndex: -10,
   },
 
   title: {
-    fontSize: 80,
+    fontSize: 65,
     lineHeight: '100px',
     color: '#FFFFFF',
     textShadow: '-2px 2px #412C7D',
@@ -76,19 +76,19 @@ function Index() {
       <div className={classes.landingBackground} />
       <Grid container alignItems="center" direction="column">
         <Grid item container justifyContent='center'>
-          <img
-            src={process.env.PUBLIC_URL + '/spaceman-behind-laptop.png'}
-            alt="" className={classes.manBehindLaptop}
-          />
+          {/*<img*/}
+          {/*  src={process.env.PUBLIC_URL + '/spaceman-behind-laptop.png'}*/}
+          {/*  alt="" className={classes.manBehindLaptop}*/}
+          {/*/>*/}
         </Grid>
         <Grid item>
           <Typography variant="h1" className={classes.title} align='center'>
-            {'اینترکارسولار'}
+            {'کاوش‌های داناستاریوس'}
           </Typography>
         </Grid>
         <Grid item>
           <Typography variant="h2" align='center' style={{ color: 'white' }}>
-            {'سومین دوره رویداد برخط'}
+            {'جمع علمی‌-ترویجی رستا و داناک'}
           </Typography>
         </Grid>
         <Grid item style={{ position: 'absolute', bottom: 0, right: 0 }}>

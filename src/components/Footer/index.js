@@ -18,7 +18,7 @@ const Footer = ({ Media }) => {
       </Grid>
       <Grid item justify='center'>
         <Typography align='center'>
-          تمامی حقوق برای کارسوق ریاضی مهرگان محفوظ است. ۱۳۹۹-۱۴۰۰
+          تمامی حقوق برای رستا و داناک محفوظ است. ۱۳۹۹-۱۴۰۰
         </Typography>
       </Grid>
     </Grid>

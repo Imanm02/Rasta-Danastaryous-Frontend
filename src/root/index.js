@@ -8,8 +8,8 @@ import OurTeam from '../containers/OurTeam';
 const Root = () => {
   return (
     <Switch>
-      <Route path="/about_us" component={AboutUs} />
-      <Route path="/our_team" component={OurTeam} />
+      {/*<Route path="/about_us" component={AboutUs} />*/}
+      {/*<Route path="/our_team" component={OurTeam} />*/}
       <Route path="/" component={Landing} />
     </Switch>
   );

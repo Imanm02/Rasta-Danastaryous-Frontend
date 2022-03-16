@@ -13,7 +13,7 @@ const useStyles = makeStyles((theme) => ({
     padding: theme.spacing(20, 0, 20, 0),
     zIndex: 5,
     position: 'relative',
-    background: '#ffc1f8',
+    background: '#BB914C',
   },
 
   image: {
@@ -24,6 +24,7 @@ const useStyles = makeStyles((theme) => ({
 
   title: {
     margin: theme.spacing(0, 0, 5, 0),
+    color:'#000000'
   },
 }));
 
@@ -41,10 +42,10 @@ function Index() {
             <According />
           </Grid>
           <Grid item xs={12} md={5} container justifyContent='center'>
-            <img
-              src={process.env.PUBLIC_URL + '/22.jpg'}
-              alt="" className={classes.image}
-            />
+            {/*<img*/}
+            {/*  src={process.env.PUBLIC_URL + '/22.jpg'}*/}
+            {/*  alt="" className={classes.image}*/}
+            {/*/>*/}
           </Grid>
         </Grid>
       </Container>

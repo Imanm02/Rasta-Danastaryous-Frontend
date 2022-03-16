@@ -32,19 +32,20 @@ const useStyles = makeStyles((theme) => ({
     padding: theme.spacing(20, 0, 20, 0),
     zIndex: 5,
     position: 'relative',
-    background: '#59A6FF',
+    background: '#BB914C',
   },
 
   whiteDescription: {
     fontSize: 22,
     fontWeight: 410,
-    // color: '#FFFFFF',
+     color: '#000000',
     textAlign: 'justify',
     textJustify: 'inter-word',
   },
 
   title: {
     margin: theme.spacing(0, 0, 5, 0),
+    color: '#000000'
   },
 }));
 
@@ -58,25 +59,25 @@ function Index() {
 
       <Container maxWidth='lg'>
         <Typography className={classes.title} variant="h1" gutterBottom>
-          {'اینترکارسولار چیه؟'}
+          {'چه خبره؟'}
         </Typography>
         <Grid container justify="space-between" alignItems="center" spacing={2}>
-          <Grid item xs={12} md={6}>
+          <Grid item xs={12} md={60}>
             <Typography className={classes.whiteDescription} gutterBottom>
-              {'اینترکارسولار همون «کارسوق ریاضی» مجازیه؛ یه رویداد علمی و تعاملی که توسط دانش‌آموزان و دانشجویان نه چندان بزرگ‌تر از شما در سراسر کشور به صورت مجازی برگزار می‌شه! هدف اینترکارسولار اینه که مباحث زیبا و جذاب ریاضی رو به شکلی متفاوت و به دور از روش‌های معمول و استرس امتحان و نمره‌دهی به بچه‌ها ارائه کنه؛ به عبارت دیگه، اینترکارسولار در تلاشه تا چهره‌ی ریاضی رو خارج از غالب‌های خشک رایج به نمایش بگذاره و به دانش‌آموزان نشون بده که ریاضی واقعی چیه.'}
+              {'با تبریک عید نوروز شروع می‌کنیم، امیدواریم سالی زیبا و پر از تجربه‌های جدید رو آغاز کرده باشین، قراره سه روز در این ایام، ما مهمان خونه‌هاتون باشیم و درکنار همدیگه سفرکنیم به یونان باستان. همسفرهاتون در این مسیر عمدتا دانشجویانی از جمع علمی-ترویجی رستا و همینطور دانش‌آموزانی از داناک هستند و برنامه‌‌های جذابی رو در دوبخش کارگاه‌های علمی و مسابقه، براتون تدارک دیده‌اند. در سه کارگاه علمی گوشه‌ای از زیبایی‌های علم هندسه، فیزیک و احتمال رو خواهیم دید و روز پایانی رویداد رو در مسابقه‌ای جذاب سپری می‌کنیم. در طول این سه روز ارائه‌هایی هم داریم که بعدا بیشتر ازشون میگیم :) '}
             </Typography>
           </Grid>
-          <Grid item xs={12} md={5}>
-            <div className={classes.h_iframe_aparat_embed_frame}>
-              <span></span>
-              <iframe
-                title="معرفی کارسوق ریاضی مهرگان"
-                src="https://www.aparat.com/video/video/embed/videohash/4twoM/vt/frame"
-                allowFullScreen
-                webkitallowfullscreen="true"
-                mozallowfullscreen="true"></iframe>
-            </div>
-          </Grid>
+          {/*<Grid item xs={12} md={5}>*/}
+          {/*  /!*<div className={classes.h_iframe_aparat_embed_frame}>*!/*/}
+          {/*  /!*  <span></span>*!/*/}
+          {/*  /!*  <iframe*!/*/}
+          {/*  /!*    title="معرفی کارسوق ریاضی مهرگان"*!/*/}
+          {/*  /!*    src="https://www.aparat.com/video/video/embed/videohash/4twoM/vt/frame"*!/*/}
+          {/*  /!*    allowFullScreen*!/*/}
+          {/*  /!*    webkitallowfullscreen="true"*!/*/}
+          {/*  /!*    mozallowfullscreen="true"></iframe>*!/*/}
+          {/*  /!*</div>*!/*/}
+          {/*</Grid>*/}
         </Grid>
       </Container>
 
