@@ -54,12 +54,9 @@ function Index() {
           spacing={3}>
           <Grid item xs={12} sm={10} md={8}>
             <Paper className={classes.featuresSectionPaper} elevation={3}>
-              <Grid container spacing={2} alignItems="center" justify="center">
+              <Grid container spacing={2} alignItems="center" justifyContent="center">
                 <Grid item xs={12} sm={4}>
-                  {/*<img*/}
-                  {/*  src={process.env.PUBLIC_URL + '/33.jpg'}*/}
-                  {/*  alt=""*/}
-                  {/*/>*/}
+                <img src={process.env.PUBLIC_URL + '/step-1.png'} alt="" />
                 </Grid>
                 <Grid item xs={12} sm={80}>
                   <Typography variant="h2" align="center" gutterBottom>
@@ -74,14 +71,10 @@ function Index() {
           </Grid>
           <Grid item xs={12} sm={10} md={8}>
             <Paper className={classes.featuresSectionPaper}>
-              <Grid
-                container
-                spacing={2}
-                direction="row-reverse"
-                alignItems="center">
-                {/*<Grid item xs={12} sm={4}>*/}
-                {/*  /!*<img src={process.env.PUBLIC_URL + '/44.jpg'} alt="" />*!/*/}
-                {/*</Grid>*/}
+              <Grid container spacing={2} alignItems="center" justifyContent="center">
+                <Grid item xs={12} sm={4}>
+                <img src={process.env.PUBLIC_URL + '/step-2.png'} alt="" />
+                </Grid>
                 <Grid item xs={12} sm={80}>
                   <Typography variant="h2" align="center" gutterBottom>
                     {'ارتباط با همیار'}
@@ -95,10 +88,10 @@ function Index() {
           </Grid>
           <Grid item xs={12} sm={10} md={8}>
             <Paper className={classes.featuresSectionPaper}>
-              <Grid container spacing={2} alignItems="center">
-                {/*<Grid item xs={12} sm={4}>*/}
-                {/*  <img src={process.env.PUBLIC_URL + '/11.jpg'} alt="" />*/}
-                {/*</Grid>*/}
+              <Grid container spacing={2} alignItems="center" justifyContent="center">
+              <Grid item xs={12} sm={4}>
+                <img src={process.env.PUBLIC_URL + '/step-3.png'} alt="" />
+                </Grid>
                 <Grid item xs={12} sm={80}>
                   <Typography variant="h2" align="center" gutterBottom>
                     {' کار گروهی'}
