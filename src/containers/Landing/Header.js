@@ -38,7 +38,7 @@ const useStyles = makeStyles((theme) => ({
     marginTop: theme.spacing(2),
     [theme.breakpoints.down('sm')]: {
       fontSize: 40,
-      lineHeight: '60px',
+      lineHeight: '50px',
       marginBottom: theme.spacing(1),
     },
   },
@@ -88,7 +88,7 @@ function Index() {
           </Typography>
         </Grid>
         <Grid item>
-          <Typography variant="h2" align='center' style={{ color: 'white' }}>
+          <Typography variant="h3" align='center' style={{ color: 'white' }}>
             {'رویداد عیدانه‌ی مشترک رستا و داناک'}
           </Typography>
         </Grid>
