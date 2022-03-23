@@ -17,7 +17,7 @@ const useStyles = makeStyles((theme) => ({
   },
 
   featuresSectionPaper: {
-    padding: theme.spacing(2),
+    padding: theme.spacing(4),
     '& img': {
       width: '100%',
     },
@@ -43,7 +43,7 @@ function Index() {
 
       <Container maxWidth='lg'>
         <Typography className={classes.title} variant="h1" gutterBottom>
-          {'قراره رویداد چه شکلی باشه؟'}
+          {'چه چیزهایی در انتظارمونه؟'}
         </Typography>
 
         <Grid
@@ -56,9 +56,9 @@ function Index() {
             <Paper className={classes.featuresSectionPaper} elevation={3}>
               <Grid container spacing={2} alignItems="center" justifyContent="center">
                 <Grid item xs={12} sm={4}>
-                <img src={process.env.PUBLIC_URL + '/step-1.png'} alt="" />
+                  <img src={process.env.PUBLIC_URL + '/step-1.png'} alt="" />
                 </Grid>
-                <Grid item xs={12} sm={80}>
+                <Grid item xs={12} sm={8}>
                   <Typography variant="h2" align="center" gutterBottom>
                     {'کارگاه مجازی'}
                   </Typography>
@@ -72,10 +72,7 @@ function Index() {
           <Grid item xs={12} sm={10} md={8}>
             <Paper className={classes.featuresSectionPaper}>
               <Grid container spacing={2} alignItems="center" justifyContent="center">
-                <Grid item xs={12} sm={4}>
-                <img src={process.env.PUBLIC_URL + '/step-2.png'} alt="" />
-                </Grid>
-                <Grid item xs={12} sm={80}>
+                <Grid item xs={12} sm={8}>
                   <Typography variant="h2" align="center" gutterBottom>
                     {'ارتباط با همیار'}
                   </Typography>
@@ -83,18 +80,21 @@ function Index() {
                     بچه‌های تیم طراحی و همیارها، داخل کارگاه‌ها همراهتون هستند و با همراه هم در مسیر یادگیری حرکت می‌کنین، فقط حواستون باشه که سوال‌ها و مشارکت‌ شما داخل کارگاه از مهم‌ترین و واجب‌ترین چیزهاست.
                   </Typography>
                 </Grid>
+                <Grid item xs={12} sm={4}>
+                  <img src={process.env.PUBLIC_URL + '/step-2.png'} alt="" />
+                </Grid>
               </Grid>
             </Paper>
           </Grid>
           <Grid item xs={12} sm={10} md={8}>
             <Paper className={classes.featuresSectionPaper}>
               <Grid container spacing={2} alignItems="center" justifyContent="center">
-              <Grid item xs={12} sm={4}>
-                <img src={process.env.PUBLIC_URL + '/step-3.png'} alt="" />
+                <Grid item xs={12} sm={4}>
+                  <img src={process.env.PUBLIC_URL + '/step-3.png'} alt="" />
                 </Grid>
-                <Grid item xs={12} sm={80}>
+                <Grid item xs={12} sm={8}>
                   <Typography variant="h2" align="center" gutterBottom>
-                    {' کار گروهی'}
+                    {'کار گروهی'}
                   </Typography>
                   <Typography variant="subtitle1" className={classes.description}>
                     هم توی رستا و هم داناک، آموزش بر اساس تعامل در گروه‌ها و کار روی مسئله‌های چالش‌برانگیز، واقعی و نزدیک به دنیای فکری مخاطبینه. هدف ما از آموزش مسائل به شکل تعامل‌محور، ایجاد خلاقیت و یادگیری عمیق و همچنین تقویت روحیه کار گروهی توی شماست!                  </Typography>

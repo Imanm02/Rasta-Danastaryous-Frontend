@@ -38,7 +38,7 @@ const useStyles = makeStyles((theme) => ({
   whiteDescription: {
     fontSize: 22,
     fontWeight: 410,
-     color: '#000000',
+    color: '#000000',
     textAlign: 'justify',
     textJustify: 'inter-word',
   },
@@ -59,10 +59,10 @@ function Index() {
 
       <Container maxWidth='lg'>
         <Typography className={classes.title} variant="h1" gutterBottom>
-          {'چه خبره؟'}
+          {'اینجا چه خبره؟'}
         </Typography>
         <Grid container justify="space-between" alignItems="center" spacing={2}>
-          <Grid item xs={12} md={60}>
+          <Grid item xs={12} md={12}>
             <Typography className={classes.whiteDescription} gutterBottom>
               {'با تبریک عید نوروز شروع می‌کنیم، امیدواریم سالی زیبا و پر از تجربه‌های جدید رو آغاز کرده باشین، قراره سه روز در این ایام، ما مهمان خونه‌هاتون باشیم و درکنار همدیگه سفرکنیم به یونان باستان. همسفرهاتون در این مسیر عمدتا دانشجویانی از جمع علمی-ترویجی رستا و همینطور دانش‌آموزانی از داناک هستند و برنامه‌‌های جذابی رو در دوبخش کارگاه‌های علمی و مسابقه، براتون تدارک دیده‌اند. در سه کارگاه علمی گوشه‌ای از زیبایی‌های علم هندسه، فیزیک و احتمال رو خواهیم دید و روز پایانی رویداد رو در مسابقه‌ای جذاب سپری می‌کنیم. در طول این سه روز ارائه‌هایی هم داریم که بعدا بیشتر ازشون میگیم :) '}
             </Typography>

@@ -37,8 +37,8 @@ const useStyles = makeStyles((theme) => ({
     textAlign: 'center',
     marginTop: theme.spacing(2),
     [theme.breakpoints.down('sm')]: {
-      fontSize: 60,
-      lineHeight: '50px',
+      fontSize: 50,
+      lineHeight: '60px',
       marginBottom: theme.spacing(1),
     },
   },
@@ -54,7 +54,7 @@ const useStyles = makeStyles((theme) => ({
     color: '#FFFFFF',
     fontSize: 30,
     marginBottom: -20,
-    [theme.breakpoints.down('xs')]: {
+    [theme.breakpoints.down('sm')]: {
       fontSize: 20,
       marginBottom: -10
     },
@@ -62,7 +62,7 @@ const useStyles = makeStyles((theme) => ({
 
   arrowBottom: {
     width: 200,
-    [theme.breakpoints.down('xs')]: {
+    [theme.breakpoints.down('sm')]: {
       width: 100
     },
   }
@@ -76,10 +76,11 @@ function Index() {
       <div className={classes.landingBackground} />
       <Grid container alignItems="center" direction="column">
         <Grid item container justifyContent='center'>
-          {/*<img*/}
-          {/*  src={process.env.PUBLIC_URL + '/spaceman-behind-laptop.png'}*/}
-          {/*  alt="" className={classes.manBehindLaptop}*/}
-          {/*/>*/}
+          <img
+            style={{ borderRadius: '50%', filter: 'drop-shadow(1px 1px 5px #222)' }}
+            src={process.env.PUBLIC_URL + '/logo.png'}
+            alt="" className={classes.manBehindLaptop}
+          />
         </Grid>
         <Grid item>
           <Typography variant="h1" className={classes.title} align='center'>
@@ -88,7 +89,7 @@ function Index() {
         </Grid>
         <Grid item>
           <Typography variant="h2" align='center' style={{ color: 'white' }}>
-            {'جمع علمی‌-ترویجی رستا و داناک'}
+            {'رویداد عیدانه‌ی مشترک رستا و داناک'}
           </Typography>
         </Grid>
         <Grid item style={{ position: 'absolute', bottom: 0, right: 0 }}>
