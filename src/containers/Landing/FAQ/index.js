@@ -24,7 +24,7 @@ const useStyles = makeStyles((theme) => ({
 
   title: {
     margin: theme.spacing(0, 0, 5, 0),
-    color:'#000000'
+    color: '#000000'
   },
 }));
 
@@ -37,16 +37,16 @@ function Index() {
         <Typography className={classes.title} variant="h1" gutterBottom>
           {'سوالات متداول'}
         </Typography>
-        <Grid container justify="space-between" spacing={2}>
-          <Grid item xs={12} md={60}>
+        <Grid container justify="center" spacing={2}>
+          <Grid item xs={12} md={8}>
             <According />
           </Grid>
-          <Grid item xs={12} md={5} container justifyContent='center'>
-            {/*<img*/}
-            {/*  src={process.env.PUBLIC_URL + '/22.jpg'}*/}
-            {/*  alt="" className={classes.image}*/}
-            {/*/>*/}
-          </Grid>
+          {/* <Grid item xs={12} md={5} container justifyContent='center'>
+            <img
+              src={process.env.PUBLIC_URL + '/22.jpg'}
+              alt="" className={classes.image}
+            />
+          </Grid> */}
         </Grid>
       </Container>
 

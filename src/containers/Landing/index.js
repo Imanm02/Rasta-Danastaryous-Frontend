@@ -12,6 +12,7 @@ import Header from './Header';
 import Staff from './Staff';
 import Steps from './Steps';
 import WhatTheFuzz from './WhatTheFuzz';
+import WorkshopsList from './WorkshopsList';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -26,9 +27,10 @@ function Index() {
       <Header />
       <WhatTheFuzz />
       <Steps />
-      <FAQ />
+      <WorkshopsList />
       {/*<Galley />*/}
       <Comments />
+      <FAQ />
       {/* <Staff /> */}
       <Footer />
     </>
