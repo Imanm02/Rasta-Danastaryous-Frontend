@@ -1,8 +1,8 @@
 import {
   AppBar,
+  Box,
   Container,
   Drawer,
-  Grid,
   Hidden,
   IconButton,
   List,
@@ -10,11 +10,11 @@ import {
   makeStyles,
   Toolbar,
   useScrollTrigger,
-  withWidth,
 } from '@material-ui/core';
 import { Menu as MenuIcon } from '@material-ui/icons';
 import clsx from 'clsx';
 import React, { useState } from 'react';
+import { useParams } from 'react-router-dom';
 
 import HideOnScroll from './components/HideOnScroll';
 import modes from './modes';
@@ -52,12 +52,16 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 function ResponsiveAppBar({
+  isMentor,
+  workshop,
+  event,
   mode = 'WORKSHOP',
   showBackOnScroll = false,
   hideOnScroll = false,
   position = 'fixed',
   width,
 }) {
+  const { eventId } = useParams();
   const classes = useStyles();
   const [drawerOpen, setDrawerOpen] = useState(false);
   const trigger = useScrollTrigger({ disableHysteresis: true, threshold: 30 });
@@ -68,7 +72,7 @@ function ResponsiveAppBar({
     mobileLeftItems,
     mobileRightItems,
     mobileMenuListItems,
-  } = modes[mode]();
+  } = modes[mode]({ workshop, event, isMentor });
 
   const rightItems = width === 'xs' ? mobileRightItems : desktopRightItems;
   const leftItems = width === 'xs' ? mobileLeftItems : desktopLeftItems;
@@ -86,13 +90,8 @@ function ResponsiveAppBar({
           color='inherit'>
           <Container>
             <Toolbar className={classes.toolbar} disableGutters>
-              <Grid container justifyContent="space-between">
-                <Grid
-                  xs={6}
-                  spacing={1}
-                  container item
-                  justifyContent="flex-start"
-                  alignItems="center">
+              <div style={{ width: '100%', display: 'flex', justifyContent: 'space-between', }}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                   {mobileMenuListItems.length > 0 && (
                     <IconButton
                       edge="start"
@@ -104,24 +103,20 @@ function ResponsiveAppBar({
                     </IconButton>
                   )}
                   {rightItems.map((item, index) => (
-                    <Grid key={index} item>
+                    <Box mr={1} key={index}>
                       {item}
-                    </Grid>
+                    </Box>
                   ))}
-                </Grid>
-                <Grid
-                  xs={6}
-                  spacing={1}
-                  container item
-                  justifyContent="flex-end"
-                  alignItems="center">
+                </div>
+
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                   {leftItems.map((item, index) => (
-                    <Grid key={index} item>
+                    <Box ml={1} key={index}>
                       {item}
-                    </Grid>
+                    </Box>
                   ))}
-                </Grid>
-              </Grid>
+                </div>
+              </div>
             </Toolbar>
           </Container>
         </AppBar>
@@ -129,7 +124,7 @@ function ResponsiveAppBar({
       {mobileMenuListItems.length > 0 && (
         <Hidden smUp>
           <Drawer
-            anchor="right" open={drawerOpen}
+            anchor="left" open={drawerOpen}
             onClose={() => setDrawerOpen(false)}>
             <div className={classes.list}>
               <List>
@@ -145,4 +140,10 @@ function ResponsiveAppBar({
   );
 }
 
-export default withWidth()(ResponsiveAppBar);
+const mapStateToProps = (state) => ({
+  isMentor: state.account.userAccount?.is_mentor,
+  event: state.events.event,
+  workshop: state.workshop.workshop,
+})
+
+export default ResponsiveAppBar;
