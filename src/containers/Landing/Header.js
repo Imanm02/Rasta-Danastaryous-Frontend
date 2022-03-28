@@ -93,9 +93,9 @@ function Index() {
           </Typography>
         </Grid>
         <Grid item style={{ position: 'absolute', bottom: 0, right: 0 }}>
-          <Typography align='center' component='p' variant="h4" className={classes.arrowText}>
+          {/* <Typography align='center' component='p' variant="h4" className={classes.arrowText}>
             {'چه خبره؟'}
-          </Typography>
+          </Typography> */}
           <img
             src={process.env.PUBLIC_URL + '/scroll-bottom.gif'}
             alt="" className={classes.arrowBottom}
