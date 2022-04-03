@@ -29,7 +29,7 @@ function MentorIntroduction({
   handleClose,
   person
 }) {
-  const image = person.picture
+  const image = person?.picture
   const classes = useStyles({ image });
   return (
     <Dialog maxWidth="sm" fullWidth open={open} onClose={handleClose}>
@@ -37,12 +37,12 @@ function MentorIntroduction({
         <Grid xs={12} sm={6} container item direction='column' justify='center'>
           <Grid item>
             <Typography gutterBottom variant="h4" align="center">
-              {person.name}
+              {person?.name}
             </Typography>
           </Grid >
           <Grid item>
             <Typography variant="h6" className={classes.description}>
-              {person.description}
+              {person?.description}
             </Typography>
           </Grid>
         </Grid>

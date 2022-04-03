@@ -39,63 +39,63 @@ const PersonCard = ({ person }) => {
   const classes = useStyles();
   const [isDialogueOpen, setDialogueOpen] = useState(false);
   let position = '';
-  let introductuion = (
+  let introduction = (
     <>
-    <CardActions>
+      <CardActions>
         <Button
-        fullWidth
-        variant="contained"
-        color="secondary"
-        onClick={() => setDialogueOpen(!isDialogueOpen)}>
-        او کیست؟!
-      </Button>
-    </CardActions>
-    <MentorIntroduction
-      person={person}
-      open={isDialogueOpen}
-      handleClose={() => {
-        setDialogueOpen(!isDialogueOpen);
-      }}
-    />
+          fullWidth
+          variant="contained"
+          color="secondary"
+          onClick={() => setDialogueOpen(!isDialogueOpen)}>
+          او کیست؟!
+        </Button>
+      </CardActions>
+      <MentorIntroduction
+        person={person}
+        open={isDialogueOpen}
+        handleClose={() => {
+          setDialogueOpen(!isDialogueOpen);
+        }}
+      />
     </>
   );
-  if (person.position) {
+  if (person?.position) {
     position = (
       <Typography variant="body2" color="textSecondary" component="p">
-        {person.position}
+        {person?.position}
       </Typography>
     );
   }
-  if (person.description === 'none'){
-    introductuion="";
+  if (person?.description === 'none') {
+    introduction = "";
   }
-    return (
-      <>
-        <Card className={classes.root}>
-          <CardActionArea disabled>
-            <CardMedia
-              className={classes.media}
-              image={person.picture}
-              title={person.name}
-            />
-            <CardContent>
-              <Typography gutterBottom variant="h5" component="h2">
-                {person.name}
-              </Typography>
-              {/* {person.team.map((team) => (
+  return (
+    <>
+      <Card className={classes.root}>
+        <CardActionArea disabled>
+          <CardMedia
+            className={classes.media}
+            image={person?.picture}
+            title={person?.name}
+          />
+          <CardContent>
+            <Typography gutterBottom variant="h5" component="h2">
+              {person?.name}
+            </Typography>
+            {/* {person?.team.map((team) => (
               <>
                 <Typography variant="body2" color="textSecondary" component="p">
                   {team}
                 </Typography>
               </>
             ))} */}
-              {position}
-            </CardContent>
-          </CardActionArea>
-          {introductuion}
-        </Card>
-      </>
-    );
+            {position}
+          </CardContent>
+        </CardActionArea>
+        {introduction}
+      </Card>
+    </>
+  );
 };
 
 export default PersonCard;
