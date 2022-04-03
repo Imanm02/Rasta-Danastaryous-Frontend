@@ -31,7 +31,7 @@ function Index() {
       {/*<Galley />*/}
       <Comments />
       <FAQ />
-      {/* <Staff /> */}
+      <Staff />
       <Footer />
     </>
   );
