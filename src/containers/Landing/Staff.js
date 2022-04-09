@@ -38,7 +38,7 @@ function Index() {
   useEffect(() => {
     API.GET(`/event_metadata/form/${EVENT_REGISTRATION_FORM_ID}/staff_infos/`).then((response) => {
       try {
-        setStaff(response.results);
+        setStaff(response);
       } catch (error) {
         console.log(error)
       }
