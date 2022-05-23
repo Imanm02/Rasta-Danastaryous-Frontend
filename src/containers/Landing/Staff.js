@@ -38,7 +38,12 @@ function Index() {
   useEffect(() => {
     API.GET(`/event_metadata/form/${EVENT_REGISTRATION_FORM_ID}/staff_infos/`).then((response) => {
       try {
-        setStaff(response);
+        for (let i in response) {
+          response[i].picture = response[i].image_url
+          response[i].name = response[i].title
+        }
+        console.log(response)
+        setStaff(response)
       } catch (error) {
         console.log(error)
       }
@@ -52,10 +57,10 @@ function Index() {
         <Typography className={classes.title} variant="h1" gutterBottom>
           {'دست‌اندر‌کاران'}
         </Typography>
-        <Grid container justify="space-between" alignItems="center" spacing={2}>
-          {staff.map((staff) => (
-            <Grid item key={staff.id}>
-              <PersonCard {...staff} />
+        <Grid container justify="space-between" alignItems="center" spacing={10}>
+          {staff.map((s, index) => (
+            <Grid item key={index}>
+              <PersonCard person={s} />
             </Grid>
           ))}
         </Grid>
@@ -66,3 +71,4 @@ function Index() {
 }
 
 export default Index;
+
