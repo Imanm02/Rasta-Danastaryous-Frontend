@@ -15,9 +15,6 @@
     "konva": "^8.0.2",
     "normalizr": "^3.6.1",
     "notistack": "^1.0.9",
-    "parse": "^3.1.0",
-    "parser": "@babel/eslint-parser",
-    "pushe-webpush": "^1.1.0",
     "react": "^17.0.2",
     "react-chartjs-2": "^3.0.3",
     "react-dom": "^17.0.2",
@@ -58,6 +55,7 @@
     ]
   },
   "devDependencies": {
+    "eslint": "^8.16.0",
     "eslint-plugin-react": "^7.23.2",
     "eslint-plugin-simple-import-sort": "^7.0.0",
     "prettier": "^2.3.0",
