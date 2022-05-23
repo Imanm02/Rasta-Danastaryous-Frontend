@@ -57,9 +57,12 @@ function Index() {
         <Typography className={classes.title} variant="h1" gutterBottom>
           {'دست‌اندر‌کاران'}
         </Typography>
-        <Grid container justify="space-between" alignItems="center" spacing={10}>
+        <Grid container justify="space-between" alignItems="center" spacing={2}>
           {staff.map((s, index) => (
-            <Grid item key={index}>
+            // column ha 12 tan
+            // xs = 2 yani 6 ta column
+            // khasti avaz koni bayad taghsim kon+
+            <Grid item key={index} xs={3}>
               <PersonCard person={s} />
             </Grid>
           ))}
