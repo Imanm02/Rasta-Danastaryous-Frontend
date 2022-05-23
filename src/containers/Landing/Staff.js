@@ -42,7 +42,6 @@ function Index() {
           response[i].picture = response[i].image_url
           response[i].name = response[i].title
         }
-        console.log(response)
         setStaff(response)
       } catch (error) {
         console.log(error)
