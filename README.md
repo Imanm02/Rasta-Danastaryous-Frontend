@@ -3,7 +3,7 @@
 
 ## راه‌اندازی
 دستورات زیر را در ترمینال اجرا کنید:
-- `git clone https://github.com/Karsoogh-Mehregan/landing.git`
+- `git clone https://github.com/Rastaiha/Danastaryous_landing.git`
 - `cd landing`
 - `yarn`
 - `yarn start`
