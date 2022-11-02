@@ -1,6 +1,6 @@
 # Danastaryous Event Landing Frontend
 
-[danastaryous.rastaiha.ir] (https://danastaryous.rastaiha.ir/)
+[danastaryous.rastaiha.ir](https://danastaryous.rastaiha.ir/)
 
 ## Installation
 
