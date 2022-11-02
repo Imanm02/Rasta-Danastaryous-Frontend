@@ -1,11 +1,11 @@
-# صفحه‌ی فرود
-این پروژه یک صفحه‌ی فرود ساده مخصوص رویدادهاست و به backend ای متصل نیست. backend این پروژه، پروژه‌ی event_backend است.
+# Danastaryous Event Landing Frontend
 
-## راه‌اندازی
-دستورات زیر را در ترمینال اجرا کنید:
-- `git clone https://github.com/Rastaiha/Danastaryous_landing.git`
-- `cd landing`
+[danastaryous.rastaiha.ir] (https://danastaryous.rastaiha.ir/)
+
+## Installation
+
+- `git clone https://github.com/Imanm02/rasta-danastaryous-frontend`
+- `cd DANASTARYOUS-LANDING`
 - `yarn`
 - `yarn start`
-
-پس از این که مراحل بالا را بدون اشکال انجام دادید، می‌توانید پروژه را بر روی آدرس `http://localhost:3000` مشاهده کنید. 
+- `visit http://localhost:3000`
